@@ -42,19 +42,23 @@ margin
 }
 
 .card{
-    background-color: rgb(255, 115, 115);
-    border:2px solid rgb(255, 115, 115);
+    background-color: rgb(59, 121, 255);
+    border:2px solid rgb(59, 121, 255);
     border-radius: 16px;
     padding: 10px;
     width: 520px;
     color: white;
     display: block;
+    height: 400px;
+    overflow: hidden;
+    margin:12px;
     
 }
 
+
 .btn{
     background-color: white;
-    color: rgb(255, 115, 115);
+    color: rgb(59, 121, 255);
     border: none;
     padding: 10px 34px;
     border-radius: 44px;
@@ -90,3 +94,70 @@ none -> hide the element;
 inline -> element is covering minimum space;
 inline-block -> element is covering minimum space and display block;
 */
+
+
+.food-card{
+    border:2px solid lightgray;
+    border-radius: 16px;
+    padding: 10px;
+    width: 520px;
+    margin: 12px;
+}
+.btn-dark{
+    background-color: rgb(59, 121, 255);
+    color: white;
+    border: none;
+    padding: 10px 34px;
+    border-radius: 44px;
+    ;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+}
+.support{
+    position: fixed;
+    bottom: 0;
+    /* top:0; */
+    right: 0;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 34px;
+    border-radius: 44px;
+    cursor: pointer;
+    margin: 40px;
+}
+.heading{
+    position: sticky;
+    top:0;
+    margin:20px 0;
+    background-color: #fff;
+
+}
+
+.food-tag{
+    position: absolute;
+    /* right: 0; */
+    bottom:0;
+    margin:20px;
+    background-color: #fff;
+    padding:2px 8px;
+    border-radius: 30px;
+    font-size: 14px;
+    /* color:#fff;
+    font-size: 30px;
+    top:0; */
+}
+.position-ralative{
+    position: relative;
+}
+
+.food-card1{
+    border:2px solid lightgray;
+    border-radius: 16px;
+    padding: 10px;
+    width: 520px;
+    margin: 12px;
+}
