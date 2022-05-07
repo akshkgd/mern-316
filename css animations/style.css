@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+body{
+    margin: 0;
+    background-color: #f3f3f3;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: blueviolet;
+    /* margin-left: auto; */
+    margin:50px;
+    
+
+    /* animation */
+    animation-name: demo-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    /* animation-fill-mode: forwards; */
+}
+
+/* .box:hover{
+    animation-name: demo-animation;
+    animation-duration: 3s;
+} */
+/* @keyframes demo-animation {
+    from{}
+    to{
+       transform: rotate(60deg); 
+       margin-top: 160px;
+       background-color: tomato;
+       
+    }
+} */
+
+ @keyframes demo-animation {
+    
+    25%{
+        margin-top: 240px;
+        transform: rotate(60deg);
+    }
+    50%{
+        
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+       
+    }
+
+
+
+ }
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+
+ .cookie{
+    width: 600px;
+    padding: 18px;
+    border-radius: 16px;
+    background-color: #fff;
+    margin:50px auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+ }
+
+ .cookie-img{
+     height: 150px;
+     animation-name: cookie-img;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+ }
+
+ @keyframes cookie-img {
+     from{}
+     to{
+            transform: rotate(30deg);
+     }
+ }
+
+ .title{
+     font-size: 58px;
+     font-weight: 800;
+     margin-bottom: 0;
+ }
+
+ .btn{
+        background-color: rgb(255, 74, 38);
+        border-radius: 8px;
+        padding: 20px 38px;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        border:none;
+        text-transform: uppercase;
+        
+ }
+
+ .btn:hover{
+    animation-name: btn-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+ }
+ @keyframes btn-animation {
+    from{}
+    to{
+        transform: scale(1.1);
+        
+    }
+ }
