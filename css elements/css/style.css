@@ -24,7 +24,6 @@ body{
 }
 .tag{
     font-size: 14px;
-    font-weight: bold;
     text-transform: capitalize;
     margin: 40px 0 30px 0;
 }
@@ -41,7 +40,7 @@ body{
 
 .input:focus{
     outline: none;
-    border: 1px solid dodgerblue;
+    border: 1px solid rgb(60, 60, 60);
 }
 .input:-webkit-autofill{
     -webkit-box-shadow:  0 0 0px 1000px #fff inset;
@@ -114,6 +113,141 @@ body{
     text-align: center;
     width: 330px;
     background-color: #fff;
-    padding: 50px 20px;
+    padding: 60px 20px;
     border-radius: 20px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: auto;
+    margin-top: 60px;
+    
+}
+
+table{
+    width:100%;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    overflow: scroll;
+
+}
+td{
+    padding: 20px;
+}
+th{
+    padding: 20px;
+    text-align: left;
+}
+.pill{
+    color: white;
+    padding: 2px 12px;
+    font-size: 13px;
+    display: inline-block;
+    border-radius: 22px;
+    margin:0;
+}
+.paid{
+    background-color: rgb(215, 255, 215);
+    color: green;
+}
+.danger{
+    background-color: rgb(255, 215, 215);
+    color: red;
+}
+.active{
+    background-color: rgb(239, 222, 255);
+    color: blueviolet;
+}
+.member{
+    background-color: rgb(220, 255, 255);
+    color: teal;
+}
+.warning{
+    background-color: rgb(255, 240, 220);
+    color: rgb(255, 136, 0);
+}
+
+
+
+
+tr{
+    border-bottom: 1px solid lightgray;
+}
+/* td, th{
+    border: 1px solid lightgray;
+    padding: 16px;
+}
+
+tr:hover{
+    background-color: tomato;
+    color: white;
+} */
+.d-none{
+    display: none;
+}
+.user{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 10px  0 0 ;
+}
+.user-name{
+    display: flex;
+    align-items: center;
+}
+.table-responsive{
+    overflow-x: auto;
+}
+
+
+
+.bg-hero{
+    background-image: url('../img/benjamin-davies-FiZTaNTj2Ak-unsplash.jpg');
+    height: 500px;
+    background-size: cover;
+    width: 992px;
+    margin: 50px auto;
+    border-radius: 26px;
+}
+.hero-container{
+    text-align: center;
+    color: white;
+}
+.hero-title{
+    font-size: 60px;
+    color: white;
+    padding-top: 190px;
+    text-align: center;
+    margin:0
+}
+.hero-desc{
+    font-size: 1.26em;
+    color: white;
+    margin:0 0 20px 0;
+}
+.btn-white{
+    background-color: white;
+    color: rgb(35, 35, 35);
+    border:none;
+    font-size: 16px;
+    padding: 14px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.box-model{
+    border: 3px solid red;
+    width: 400px;
+    padding: 50px;
+    margin: 50px auto;
+
+}
+.element{
+    background-color: rgb(218, 255, 227);
+    margin:0;
+    font-size: 16px;
 }

@@ -1,0 +1,85 @@
+.card{
+    width: 600px;
+    height: 80%;
+    border:3px solid rgba(137, 43, 226, 0.514);
+    border-radius: 18px;
+    padding: 12px;
+    margin: auto;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 18px;
+}
+
+/* media query */
+
+
+@media (max-width:576px){
+    .card-img{
+        height: 140px;
+        width: 100%;
+        object-fit: cover;
+        display: none;
+    }
+    .card{
+        width: auto;
+        text-align: center;
+        
+    }
+    .user{
+        height:80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+}
+
+@media(min-width: 576px){
+    .card-img{
+        
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .user{
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+    }
+    
+}
+
+/* breakpoints: 
+small: 576px -> mobile
+medium: 768px -> not used (tablet)
+large: 992px ->laptop
+extra-large: 1200px -> pc and monitors
+*/
+
+
+
+.px{
+    background-color: rgba(137, 43, 226, 0.318);
+    color: blueviolet;
+    padding: 16px;
+    border-radius: 16px;
+    width: 200px;
+}
+.vw{
+    background-color: rgba(137, 43, 226, 0.318);
+    color: blueviolet;
+    padding: 16px;
+    border-radius: 16px;
+    width: 50vw;
+}
+.percentage{
+    background-color: rgba(137, 43, 226, 0.318);
+    color: blueviolet;
+    padding: 16px;
+    border-radius: 16px;
+    width: 50%;
+}
+
+.container{
+    height: 100vh;
+}
