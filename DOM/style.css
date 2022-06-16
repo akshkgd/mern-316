@@ -36,3 +36,22 @@ input:focus{
 .title{
     font-size: 28px;
 }
+
+.student{
+    width: 100%;
+    padding: 16px;
+    margin: 10px 0;
+    border-radius: 16px;
+    box-sizing: border-box;
+    background-color: rgb(243, 243, 243);
+}
+.student-name{
+    font-size: 17px;
+    font-weight: normal;
+    margin: 8px 0 0 0;
+}
+.student-email{
+    font-size: 14px;
+    margin: 8px 0;
+    color: gray;
+}
