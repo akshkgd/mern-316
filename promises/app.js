@@ -50,6 +50,8 @@ let hasFileDownloaded = false;
 
 
 function fetchQuote(){
+  let authorsContainer = document.getElementById('authorsContainer');
+  authorsContainer.innerHTML = ''
     fetch("https://type.fit/api/quotes")
   .then(function(response) {
     return response.json();
@@ -67,15 +69,66 @@ function fetchQuote(){
     }
     
     authors.map((author)=>{
-        let authorsContainer = document.getElementById('authorsContainer')
+        
         
         let authorsDiv = document.createElement('div');
         authorsDiv.classList.add('authorsChip');
         authorsDiv.innerHTML = author;
+        authorsDiv.addEventListener('click', showQutes);
         authorsContainer.appendChild(authorsDiv);
         
     })
   });
 }
-
 fetchQuote()
+
+function fetchRandomAuthors(){
+  
+}
+
+function showQutes(event){
+  let requestedAuthor =  event.target.innerHTML;
+  
+  //author list
+
+  let authorsContainer = document.getElementById('authorsContainer');
+  authorsContainer.innerHTML = '';
+  document.getElementById('quote').innerHTML = '';
+  document.getElementById('newQuoteBtn').style.display = 'none';
+
+  //FETCHING THE QUOTES
+  fetch("https://type.fit/api/quotes")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    let totalQuotes = data.length;
+    let randomQuote = Math.floor(Math.random()*totalQuotes);
+    
+
+    
+    //genrating new authors list
+    for(let i =randomQuote;  i<=randomQuote+5; i++ ){
+        let author = data[i].author;
+        if(author != null){
+        let authorsDiv = document.createElement('div');
+        authorsDiv.classList.add('authorsChip');
+        authorsDiv.innerHTML = author;
+        authorsDiv.addEventListener('click', showQutes);
+        authorsContainer.appendChild(authorsDiv);
+        }
+      }
+      console.log('filter started')
+      let requestedQuotes = data.filter((quote)=>{
+        
+         return quote.author === requestedAuthor;
+          
+          
+      })
+      console.log('filter end')
+      console.log(requestedQuotes)
+  });
+
+  //author list ends
+
+}
