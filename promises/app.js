@@ -93,7 +93,7 @@ function showQutes(event){
 
   let authorsContainer = document.getElementById('authorsContainer');
   authorsContainer.innerHTML = '';
-  document.getElementById('quote').innerHTML = '';
+  // document.getElementById('quote').innerHTML = '';
   document.getElementById('newQuoteBtn').style.display = 'none';
 
   //FETCHING THE QUOTES
@@ -126,7 +126,22 @@ function showQutes(event){
           
       })
       console.log('filter end')
-      console.log(requestedQuotes)
+      
+
+      //empty the quotes container
+      let quotesContainer = document.getElementById('quotesContainer');
+      quotesContainer.innerHTML = '';
+
+      //render requested quotes
+      requestedQuotes.map((quote)=>{
+        let requestedQuotesDiv = document.createElement('div');
+        requestedQuotesDiv.classList.add('qcard');
+        let requestedQuotesPara = document.createElement('p');
+        requestedQuotesPara.innerHTML  = quote.text;
+        quotesContainer.appendChild(requestedQuotesDiv);
+        requestedQuotesDiv.appendChild(requestedQuotesPara);
+
+      })
   });
 
   //author list ends
