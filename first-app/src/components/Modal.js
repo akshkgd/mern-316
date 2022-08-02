@@ -5,6 +5,7 @@ function Modal(props) {
             <h3>{props.title}</h3>
             <p>{props.desc}</p>
 
+            <button className="btn" onClick={props.onClick}>Close</button>
         </div>
 
     );

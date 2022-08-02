@@ -58,7 +58,7 @@ function App() {
         })
      }
      
-     <Modal img={movies[0].img} desc={movies[0].description} title={movies[0].title}/>
+     
      
     </div>
     
