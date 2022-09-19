@@ -6,7 +6,9 @@ function Navigation() {
             <h2><Link className={style.logo} to='/'>CKM</Link></h2>
             <div className={style.navlinks}>
             <li><Link className={style.links} to='/'>Home</Link></li>
+            
             <li><Link className={style.btn} to='/add'>Add Meeting</Link></li>
+            
             </div>
             
         </ul>

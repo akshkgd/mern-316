@@ -1,0 +1,67 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card{
+    width:400px;
+    padding: 10px;
+    margin:10px auto;
+    border:1px solid #ccc;
+    border-radius: 14px;
+}
+.card-img{
+    width: 100%;
+    border-radius: 14px;
+
+}
+.email-input{
+    width: 100%;
+    padding: 16px;
+    border:1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.email-input:focus{
+    outline: none;
+    border: 1px solid rgb(0, 128, 255);;
+}
+.btn{
+    margin-top: 10px;
+    padding: 16px 30px;
+    border:none;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: rgb(220, 220, 220);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(0, 128, 255);
+    color:white;
+}
+.alert-success{
+    width:400px;
+    margin: 20px auto;
+    padding: 20px;
+    border:none;
+    border-radius: 8px;
+    font-size: 16px;
+    /* text-align: center; */
+    background-color: rgb(213, 255, 213);
+    color: green;
+}
+.alert-danger{
+    width:400px;
+    margin: 20px auto;
+    padding: 20px;
+    border:none;
+    border-radius: 8px;
+    font-size: 16px;
+    /* text-align: center; */
+    background-color: rgb(255, 213, 213);
+    color: rgb(255, 51, 51);
+}
+.d-none{
+    display: none;
+}
