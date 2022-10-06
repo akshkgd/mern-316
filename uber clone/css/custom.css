@@ -1,0 +1,38 @@
+.nav-link{
+    margin: 0 10px;
+    padding: 5px 10px !important;
+    color: white;
+}
+.nav-link:hover{
+    background-color: rgba(128, 128, 128, 0.492);
+    border-radius: 40px;
+    padding: auto 20px !important;
+    color: white;
+}
+.header-container{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/About_us_600.webp);
+    background-size: cover;
+    position: relative;
+}
+.header-content{
+    position: absolute;
+    bottom: 0;
+}
+.ceo-container{
+    width: 100%;
+    height: 560px;
+    background-image: url('../img/dara-desktop.webp');
+    background-size: cover;
+    /* position: relative; */
+}
+.ceo-content{
+    /* position: absolute; */
+    color: white;
+    top:0;
+    margin-top: 100px;
+}
+.container{
+    margin-top: 100px !important;
+}
