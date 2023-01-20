@@ -1,0 +1,15 @@
+$theme-colors: (
+  "primary":    #0072F5,
+  "secondary":  #889096,
+  "success":    #17C964,
+  "warning":    #F5A524,
+  "danger":     #F31260,
+  "light":      white,
+  "dark":       black
+);
+
+
+$input-btn-focus-box-shadow:none;
+$input-focus-border-color: #17C964;
+$card-border-radius: 16px;
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

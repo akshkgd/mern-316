@@ -1,0 +1,19 @@
+.custom-round{
+    border-radius: 16px !important;
+}
+.btn-help{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    margin: 40px;
+    border:none;
+    border-radius: 40px;
+    padding: 8px 24px !important;
+}
+
+$modal-content-border-radius: 16px;
+$modal-content-border-color: white;
+$modal-header-border-color: white;
+@import '../node_modules/bootstrap/scss/bootstrap.scss'

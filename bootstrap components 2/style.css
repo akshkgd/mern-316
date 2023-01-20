@@ -1,0 +1,10 @@
+.login-container{
+    height: 74vh;
+}
+.modal-header{
+    border:none;
+}
+.modal-content{
+    border:none;
+    border-radius: 16px;
+}

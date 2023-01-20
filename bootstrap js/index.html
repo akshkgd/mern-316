@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+
+                </ul>
+                <div class="d-flex" role="search">
+
+                    <!-- <button class="btn btn-primary px-4 py-2" data-bs-toggle="modal" data-bs-target="#register">Try for
+                        Free</button> -->
+
+                        <button class="btn btn-primary px-4 py-2" data-bs-toggle="modal" data-bs-target="#register">Try for Free</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="row justify-content-center mt-1">
+        <div class="col-md-6">
+            <div class="shado p-3 text-center custom-round">
+                <img src="./img/custom.avif" class="img-fluid" alt="">
+                <h1 class="fw-bold display-6">Welcome to the new platform!!</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur. Autem velit consectetur alias illum cum exercitationem eum
+                    odit optio ab minus?</p>
+                <div>
+                    <button class="btn btn-primary px-5 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Know
+                        More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Super Peer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/KBUL0nm7bY-2176.avif" class="img-fluid" alt="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore iure, maxime recusandae dolore
+                        delectus nulla itaque libero obcaecati excepturi quidem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat saepe id officiis possimus aut
+                        omnis cumque at minima, velit qui animi error nobis ratione, alias aspernatur hic dolor ipsum
+                        nemo cupiditate mollitia, assumenda quaerat? Nam?</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- registration modal -->
+    <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Signup for free</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Full Name</label>
+                    </div>
+                    <div class="form-floating mb-3 ">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+
+                    <div class="form-floating mb-3 ">
+                        <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Password</label>
+                    </div>
+
+                    <button class="btn btn-primary px-4 py-2">Register for free</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
